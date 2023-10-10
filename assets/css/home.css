@@ -1,0 +1,203 @@
+/* Importing Poppings font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    /* background-color: lightgray; */
+    /* text-align: center; */
+    color: grey;
+}
+/* App Container  */
+.app-container {
+    margin: 50px auto;
+    width: 700px;
+    /* max-height: 500px; */
+    /* border: 1px solid black; */
+    overflow-y: auto;
+}
+
+/* App heading */
+h1 {
+    text-align: center;
+    padding: 0.3em;
+}
+
+/* Description container */
+.desc {
+    width: 100%;
+    padding: 1em;
+    border: 3px solid lightgray;
+    border-right: none;
+    border-left: none;
+}
+
+.desc:focus-within {
+    background-color: lightgrey;
+}
+
+.desc > input {
+    outline: none;
+    border: none;
+    width: 100%;
+    color: grey;
+    font-size: 1em;
+    background: transparent;
+}
+/* ///////// */
+
+/* Category and due date container */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    border-bottom: 3px solid lightgrey;
+}
+
+.wrapper > div {
+    width: 50%;
+    padding: 1em;
+}
+
+/* Category container */
+.category {
+    border-right: 3px solid lightgray;
+}
+
+.category:focus-within {
+    background-color: lightgray;
+}
+
+
+.category > select {
+    outline: none;
+    border: none;
+    font-size: 1em;
+    width: 100%;
+    color: grey;
+    background: transparent;
+}
+
+/* Due date container */
+.date:focus-within {
+    background-color: lightgray;
+}
+
+.date > input {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1em;
+    color: grey;
+    background: transparent;
+    /* border: 1px solid black; */
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5em 22%;
+}
+
+.buttons > button {
+    padding: 1em;
+    font-size: 1em;
+    width: 160px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Add button */
+.buttons > button:first-child {
+    background-color: #454345;
+}
+/* Delete button */
+.buttons > button:last-child {
+    background-color: #e83623;
+}
+
+/* List item styling */
+.list-item {
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 1em;
+    border-top: 3px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+    word-wrap: break-word;
+    padding: 0.5em;
+}
+
+
+.right {
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+/* This is the div for list item due date, not to be confused with user input field for date */
+.dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 45%;
+}
+/* Category of list item */
+.cat {
+    margin-right: 0;
+    margin-left: auto;
+    width: 110px;
+    padding: 0.8em 0;
+    color: white;
+    text-align: center;
+    /* background-color: black; */
+    text-transform: capitalize;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+/* This class will be added dynamically based on whether the checkbox is checked or not,  */
+.crossed-off {
+    text-decoration: line-through;
+}
+
+/* Color classes for each category*/
+.work {
+    background-color: #036fa0;
+}
+
+.school {
+    background-color: #557763;
+}
+
+.personal {
+    background-color: #e18c85;
+}
+
+.cleaning {
+    background-color: #8bb8b3;
+}
+
+.other {
+    background-color: #f7e6d2;
+}

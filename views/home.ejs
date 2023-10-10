@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Title of Page -->
+    <title><%= title %></title>
+</head>
+<body>
+    <!-- App container starts here -->
+    <div class="app-container">
+        <!-- App heading -->
+        <h1>TODO App</h1>
+        <!-- Form to submit Todo details -->
+        <form action="/create_todo" method="post">
+            <div class="desc">
+                <!-- Heading for Todo Description -->
+                <h4>DESCRIPTION</h4>
+                <!-- User input for Todo Description -->
+                <input type="text" name="description" placeholder="What do you need to do?" required>
+            </div>
+            <!-- This div contains the category and due date of Todo list item -->
+            <div class="wrapper">
+                <!-- This div contains the category dropdown menu -->
+                <div class="category">
+                    <!-- Heading for category -->
+                    <h4>CATEGORY</h4>
+                    <!-- Category dropdown -->
+                    <select name="category" id="type" required>
+                        <option value="choose" disabled selected>Choose a Category</option>
+                        <option value="personal">Personal</option>
+                        <option value="work">Work</option>
+                        <option value="school">School</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <!-- Date -->
+                <div class="date">
+                    <!-- Heading for due date -->
+                    <h4>DUE DATE</h4>
+                    <!-- An input tag is used with type date for getting date from user -->
+                    <input type="date" name="date" required>
+                </div>
+            </div>
+            <!-- Buttons div -->
+            <div class="buttons">
+                <!-- Add task button -->
+                <button type="submit">
+                    <i class="fa-solid fa-plus"></i>
+                    ADD TASK
+                </button>
+                <!-- Delete task button -->
+                <button type="submit" id="delete-items">
+                    <i class="fa-solid fa-trash-can"></i>
+                    DELETE TASKS
+                </button>
+            </div>
+        </form>
+        <!-- Form ends here -->
+        <!-- List of Todo Items start here -->
+        <div class="todo-list">
+            <!-- Looping through the list of Todo Items-->
+            <% for ( let i of todo_List) { %>
+                <!-- List item starts here -->
+                <div class="list-item">
+                    <div class="left">
+                        <!-- Checkbox which, when checked, will delete the item from the list -->
+                        <input type="checkbox" id="<%=i._id%>" class="list-check" onclick="checkedOrNot()">
+                        <!-- Todo list item description -->
+                        <h3 class="todo-desc"><%= i.description %></h3>
+                        <div class="dates">
+                            <!-- Calendar icon -->
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <!-- Due date -->
+                            <h4 class="due-date"><%= i.date %></h4>
+                        </div>
+                    </div>
+                    <!-- This div is for the category of the Todo list item -->
+                    <div class="right">
+                        <div class="cat">
+                            <%= i.category %>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+        <!-- List ends here -->
+    </div>
+    <!-- App container ends here -->
+    <!-- jQuery CDN  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/8e3b4fcd56.js" crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script src="js/home.js"></script>
+</body>
+</html>
