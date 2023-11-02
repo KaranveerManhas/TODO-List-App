@@ -7,7 +7,6 @@ The TODO List App is a web application that allows users to create and manage th
 - Create new tasks with a description, category, and deadline.
 - View the list of tasks with their details.
 - Mark tasks as completed.
-- Edit and update existing tasks.
 - Delete tasks from the list.
 
 ## Prerequisites
@@ -16,30 +15,28 @@ Before running the TODO List App, ensure that you have the following dependencie
 
 - Node.js
 - Express.js
-- MongoDB
+- Mongoose
 - EJS (Embedded JavaScript) view engine
 
 ## Installation
 
 1. Clone the repository to your local machine:
-
 bash
-git clone https://github.com/your-username/todo-list-app.git
-2. Navigate to the project directory:
+git clone https://github.com/KaranveerManhas/todo-list-app.git
 
+2. Navigate to the project directory:
 bash
 cd todo-list-app
-3. Install the required dependencies:
 
+3. Install the required dependencies:
 bash
 npm install
-4. Set up the MongoDB connection by providing the appropriate database URL in the `.env` file.
 
-5. Start the application:
-
+4. Start the application:
 bash
 npm start
-6. Access the TODO List App in your web browser at `http://localhost:3000`.
+
+5. Access the TODO List App in your web browser at `http://localhost:8000`.
 
 ## Usage
 
@@ -66,5 +63,5 @@ The TODO List App was built using the following technologies and resources:
 
 - Node.js
 - Express.js
-- MongoDB
+- Mongoose
 - EJS (Embedded JavaScript) view engine
