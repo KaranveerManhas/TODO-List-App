@@ -39,18 +39,21 @@ h1 {
     border-left: none;
 }
 
-.desc:focus-within {
+/* .desc:focus-within {
     background-color: lightgrey;
-}
+} */
 
-.desc > input {
+.desc input {
     outline: none;
     border: none;
     width: 100%;
     color: grey;
     font-size: 1em;
-    background: transparent;
+    background-color: #fff;
 }
+
+
+
 /* ///////// */
 
 /* Category and due date container */
@@ -71,10 +74,6 @@ h1 {
     border-right: 3px solid lightgray;
 }
 
-.category:focus-within {
-    background-color: lightgray;
-}
-
 
 .category > select {
     outline: none;
@@ -86,9 +85,9 @@ h1 {
 }
 
 /* Due date container */
-.date:focus-within {
+/* .date:focus-within {
     background-color: lightgray;
-}
+} */
 
 .date > input {
     outline: none;
