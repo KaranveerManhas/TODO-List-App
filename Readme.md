@@ -25,21 +25,23 @@ Before running the TODO List App, ensure that you have the following dependencie
 
 1. Clone the repository to your local machine:
 ```
-bash
 git clone https://github.com/KaranveerManhas/todo-list-app.git
 ```
 
 2. Navigate to the project directory:
-bash
+```
 cd todo-list-app
+```
 
 3. Install the required dependencies:
-bash
+```
 npm install
+```
 
 4. Start the application:
-bash
+```
 npm start
+```
 
 5. Access the TODO List App in your web browser at `http://localhost:8000`.
 
