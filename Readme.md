@@ -24,8 +24,10 @@ Before running the TODO List App, ensure that you have the following dependencie
 ## Installation
 
 1. Clone the repository to your local machine:
+```
 bash
 git clone https://github.com/KaranveerManhas/todo-list-app.git
+```
 
 2. Navigate to the project directory:
 bash
