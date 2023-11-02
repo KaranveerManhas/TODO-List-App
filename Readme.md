@@ -9,6 +9,9 @@ The TODO List App is a web application that allows users to create and manage th
 - Mark tasks as completed.
 - Delete tasks from the list.
 
+  ![image](https://github.com/KaranveerManhas/todo-list-app/assets/82330083/a251f3af-4b08-43c9-8b78-fce9114770d3)
+
+
 ## Prerequisites
 
 Before running the TODO List App, ensure that you have the following dependencies installed:
